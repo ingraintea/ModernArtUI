@@ -122,8 +122,10 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         testText.setText("The value is: " + progress + " - " + convertHsbToRgb(progress));
         testText.setTextColor(parseColor(convertHsbToRgb(progress)));
 
-//        reg11.setBackgroundColor(parseColor("#00FF00"));
-//        reg12.setBackgroundColor(parseColor("#00FF00"));
+        reg11.setBackgroundColor(parseColor(convertHsbToRgb(progress)));
+        reg12.setBackgroundColor(parseColor(convertHsbToRgb(progress % 230 + 20)));
+        reg21.setBackgroundColor(parseColor(convertHsbToRgb(progress % 230 + 80)));
+        reg23.setBackgroundColor(parseColor(convertHsbToRgb(progress % 230 + 100)));
     }
 
     private void setProgressBasedBackgroundColor(LinearLayout reg, int progress) {
