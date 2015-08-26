@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         reg23.setBackgroundColor(parseColor(convertHsbToRgb(progress % 230 + 100)));
     }
 
+
+    // Some comments
 /*    private void setProgressBasedBackgroundColor(LinearLayout reg, int progress) {
 
         int originalRegColor = reg.getSolidColor();
